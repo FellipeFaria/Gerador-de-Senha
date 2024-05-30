@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Gerador de Senha</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="container-titulo">
+            <h1>Gerador de Senha</h1>
+        </div>
+
+        <div class="container-senha">
+            <span id="senha"></span>
+            <img onclick="copiar();" src="icone_copiar.svg" alt="icone de copiar">
+        </div>
+
+        <div class="container-input">
+            <label for="tamanho">Tamanho da senha</label>
+            <input id="tamanho" type="number" name="tamanho da senha" value="8" min="8" max="16" step="1">
+        </div>
+
+        <div class="container-botao">
+            <button onclick="gerarSenha();">Gerar Senha</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
